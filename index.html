@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刘雅玲 - 人工智能高端研发与优化专家</title>
+    <style>
+        :root {
+            --primary-color: #0F4C81; /* 经典科技蓝 */
+            --secondary-color: #1A365D;
+            --accent-color: #E2E8F0;
+            --text-main: #2D3748;
+            --text-light: #718096;
+            --bg-color: #F7FAFC;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 顶部欢迎区 */
+        header {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            color: white;
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin: 0 0 10px 0;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            margin: 5px 0;
+            font-weight: 300;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            font-size: 1rem;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            border-bottom: 1px dashed rgba(255,255,255,0.5);
+        }
+
+        /* 主体内容区 */
+        .container {
+            max-width: 1100px;
+            margin: -40px auto 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: white;
+            border-radius: 12px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.03), 0 1px 3px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        /* 核心优势段落 */
+        .about-text {
+            font-size: 1.1rem;
+            color: #4A5568;
+            text-align: justify;
+        }
+
+        /* 项目卡片网格 */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            border: 1px solid var(--accent-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+            border-color: #CBD5E0;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+        }
+
+        .card-role {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-light);
+            margin-bottom: 10px;
+        }
+
+        .tags {
+            margin-top: auto;
+            padding-top: 15px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #EDF2F7;
+            color: #2B6CB0;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-right: 6px;
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+
+        /* 学术列表 */
+        .paper-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .paper-list li {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .paper-list li::before {
+            content: "➤";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+        }
+
+        .paper-title {
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .highlight {
+            color: #C53030;
+            font-weight: bold;
+            font-size: 0.9em;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>刘雅玲</h1>
+        <p>西南财经大学 (博士) & 香港理工大学 (联合培养)</p>
+        <p>高级算法工程师 | 大模型优化专家 | 强化学习研发专家</p>
+        <div class="contact-info">
+            <a href="mailto:958396513@qq.com">✉️ 958396513@qq.com</a>
+            <a href="tel:13008153610">📞 13008153610</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>科研积淀与核心优势</h2>
+            <div class="about-text">
+                <p>作为专注于优化理论、强化学习及大模型的博士研究人员，我的核心体系围绕<strong>梯度方差优化框架及其在分布式与序贯决策中的应用</strong>展开。精通 PyTorch 底层机制与自定义算子开发，具备从理论推导到千卡集群端到端部署的全流程落地能力。善于将前沿学术成果转化为工业级的高性能、高可用解决方案。</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>工业级落地与重点项目</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>大模型预训练与算网协同调度系统</h3>
+                    <div class="card-role">核心算法负责人 | 国家自然科学基金项目</div>
+                    <p>设计基于深度生成模型的异构算力调度算法，优化千卡集群梯度压缩与通信重叠机制。成功支撑亿级参数大模型稳定训练，将故障恢复时间从小时级缩短至分钟级，方案已应用于电信“息壤”平台。</p>
+                    <div class="tags">
+                        <span class="tag">异构算力调度</span>
+                        <span class="tag">分布式训练</span>
+                        <span class="tag">系统容灾</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>大语言模型高效微调框架 (CVor/FedNCV)</h3>
+                    <div class="card-role">独立研究者 | 湘江实验室项目</div>
+                    <p>独立研发通用控制变量算子(CVor)与联邦学习框架，重构 LoRA 微调梯度更新逻辑。在 Llama/ChatGLM 基座上实现收敛速度提升 40%，显存占用降低 15%，有效解决收敛慢与显存占用高难题。</p>
+                    <div class="tags">
+                        <span class="tag">自研算子开发</span>
+                        <span class="tag">LoRA底层重构</span>
+                        <span class="tag">联邦学习</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>金融衍生品动态对冲交易系统</h3>
+                    <div class="card-role">量化算法工程师 | 上海掌赢投资实盘</div>
+                    <p>构建基于深度扩散强化学习(Deep Diffusion RL)的毫秒级决策引擎与实盘对接系统。实盘管理资金超 500 万，实现年化超额收益 22.3% 且保持零重大风险纪录。</p>
+                    <div class="tags">
+                        <span class="tag">扩散模型 (Diffusion)</span>
+                        <span class="tag">深度强化学习</span>
+                        <span class="tag">高频量化对冲</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>代表性学术成果</h2>
+            <ul class="paper-list">
+                <li>
+                    <strong>Liu Y</strong>, X. Chen, et al. <span class="paper-title">"Cvor: A universal control variates operator for gradient estimation"</span>, <em>INFORMS Journal on Computing</em>, 2025. <span class="highlight">(UTD24 顶刊)</span>
+                </li>
+                <li>
+                    H. Du, <strong>Liu Y</strong>, et al. <span class="paper-title">"Why Empirical Risk Minimization Performs Well for Open Set Domain Adaptation: A Theoretical Analysis from Causal View"</span>, <em>IEEE Transactions on Neural Networks and Learning Systems</em>, 2025. <span class="highlight">(计算机顶刊)</span>
+                </li>
+                <li>
+                    <strong>Liu Y</strong>, Yang X, Chen X, et al. <span class="paper-title">"FedNCV: Optimizing Federated Learning With Networked Control Variates"</span>, <em>Transactions on Emerging Telecommunications Technologies</em>, 2025.
+                </li>
+                <li>
+                    <strong>Liu Y</strong>, Li J, Chen Y, et al. <span class="paper-title">"Deep Diffusion Reinforcement Learning for Options Hedging"</span>, 2025.
+                </li>
+            </ul>
+        </section>
+    </div>
+
+</body>
+</html>
