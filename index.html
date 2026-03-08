@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>刘雅玲 - 人工智能高端研发与优化专家</title>
+    <title>刘雅玲 - 人工智能高端研发与全栈架构专家</title>
     <style>
         :root {
             --primary-color: #0F4C81; /* 经典科技蓝 */
@@ -87,6 +87,59 @@
             text-align: justify;
         }
 
+        /* --- 新增：全栈技术架构模块 --- */
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .skill-group {
+            background: #F8FAFC;
+            border: 1px solid #E2E8F0;
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+        
+        .skill-group h3 {
+            margin-top: 0;
+            color: #2B6CB0;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .skill-tag {
+            background: white;
+            border: 1px solid #CBD5E0;
+            color: #4A5568;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        
+        .skill-tag:hover {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+        
+        /* 针对特别核心的技术高亮 */
+        .skill-tag.core {
+            border-color: #3182CE;
+            color: #2B6CB0;
+            background: #EBF8FF;
+        }
+
         /* 项目卡片网格 */
         .grid {
             display: grid;
@@ -101,6 +154,7 @@
             transition: all 0.3s ease;
             display: flex;
             flex-direction: column;
+            background: white;
         }
 
         .card:hover {
@@ -162,12 +216,19 @@
             font-weight: 600;
             color: var(--text-main);
         }
-
+        
         .highlight {
             color: #C53030;
             font-weight: bold;
             font-size: 0.9em;
             margin-left: 5px;
+        }
+
+        /* 响应式调整 */
+        @media (max-width: 768px) {
+            .skills-container {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -176,7 +237,7 @@
     <header>
         <h1>刘雅玲</h1>
         <p>西南财经大学 (博士) & 香港理工大学 (联合培养)</p>
-        <p>高级算法工程师 | 大模型优化专家 | 强化学习研发专家</p>
+        <p>高级算法工程师 | 大模型全栈优化专家 | 强化学习研发专家</p>
         <div class="contact-info">
             <a href="mailto:958396513@qq.com">✉️ 958396513@qq.com</a>
             <a href="tel:13008153610">📞 13008153610</a>
@@ -187,12 +248,74 @@
         <section>
             <h2>科研积淀与核心优势</h2>
             <div class="about-text">
-                <p>作为专注于优化理论、强化学习及大模型的博士研究人员，我的核心体系围绕<strong>梯度方差优化框架及其在分布式与序贯决策中的应用</strong>展开。精通 PyTorch 底层机制与自定义算子开发，具备从理论推导到千卡集群端到端部署的全流程落地能力。善于将前沿学术成果转化为工业级的高性能、高可用解决方案。</p>
+                <p>作为专注于优化理论、强化学习及大模型的博士研究人员，我的核心体系围绕<strong>梯度方差优化框架及其在分布式与序贯决策中的应用</strong>展开。具备罕见的<strong>“AI 算网融合与全栈架构”</strong>交叉能力：不仅精通 PyTorch 底层机制与自定义算子开发，还能将大算力 AI 降维应用于沉浸式媒体的高效通信分发，熟练驾驭从理论推导、千卡集群调度到端边云协同部署的全流程落地闭环。</p>
             </div>
         </section>
 
         <section>
-            <h2>工业级落地与重点项目</h2>
+            <h2>全栈技术与架构体系</h2>
+            <div class="skills-container">
+                <div class="skill-group">
+                    <h3>⚙️ 底层算子与最优化理论</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag core">自研 CVor 算子开发</span>
+                        <span class="skill-tag core">PyTorch/TensorFlow 源码级优化</span>
+                        <span class="skill-tag">Stochastic Optimization</span>
+                        <span class="skill-tag">Nesterov 二阶加速算法</span>
+                        <span class="skill-tag">LoRA/P-Tuning 底层重构</span>
+                        <span class="skill-tag">微分方程动态演化建模</span>
+                    </div>
+                </div>
+                
+                <div class="skill-group">
+                    <h3>🧠 大模型生态与 AIGC 技术</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag core">大模型 3D 并行 (DP/TP/PP)</span>
+                        <span class="skill-tag core">Diffusion Models (扩散模型)</span>
+                        <span class="skill-tag">Transformer & BERT/GPT</span>
+                        <span class="skill-tag">Agent 智能决策引擎</span>
+                        <span class="skill-tag">LangChain & 高级 RAG</span>
+                        <span class="skill-tag">多模态对齐 (CLIP/VAE)</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h3>🌐 分布式调度与算网协同</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag core">异构算力调度与通信重叠</span>
+                        <span class="skill-tag core">Cloud-Edge-Crowd 云边端协同</span>
+                        <span class="skill-tag">大模型弹性容灾 (Checkpointing)</span>
+                        <span class="skill-tag">MPTCP/DASH 传输协议栈</span>
+                        <span class="skill-tag">Docker 容器化部署机制</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h3>博弈博弈与时序网络博弈</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag core">Deep Diffusion RL (深度扩散强化学习)</span>
+                        <span class="skill-tag core">MARL (多智能体共识博弈)</span>
+                        <span class="skill-tag">自研 FedNCV 联邦学习框架</span>
+                        <span class="skill-tag">MDP 序贯决策建模</span>
+                        <span class="skill-tag">GNN/GAT 图计算资源分配</span>
+                    </div>
+                </div>
+                
+                <div class="skill-group">
+                    <h3>🎬 多媒体编解码与跨界应用</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag core">金融高频量化毫秒级对冲引擎</span>
+                        <span class="skill-tag">SVC (可拓展视频编码)</span>
+                        <span class="skill-tag">Foveated Rendering (注视点渲染)</span>
+                        <span class="skill-tag">光流法 (Optical Flow) 运动补偿</span>
+                        <span class="skill-tag">Tile-based 沉浸式传输机制</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>工业级落地与重点交叉项目</h2>
             <div class="grid">
                 <div class="card">
                     <h3>大模型预训练与算网协同调度系统</h3>
@@ -200,37 +323,48 @@
                     <p>设计基于深度生成模型的异构算力调度算法，优化千卡集群梯度压缩与通信重叠机制。成功支撑亿级参数大模型稳定训练，将故障恢复时间从小时级缩短至分钟级，方案已应用于电信“息壤”平台。</p>
                     <div class="tags">
                         <span class="tag">异构算力调度</span>
-                        <span class="tag">分布式训练</span>
+                        <span class="tag">算网协同调度</span>
                         <span class="tag">系统容灾</span>
                     </div>
                 </div>
-
+                
                 <div class="card">
                     <h3>大语言模型高效微调框架 (CVor/FedNCV)</h3>
                     <div class="card-role">独立研究者 | 湘江实验室项目</div>
-                    <p>独立研发通用控制变量算子(CVor)与联邦学习框架，重构 LoRA 微调梯度更新逻辑。在 Llama/ChatGLM 基座上实现收敛速度提升 40%，显存占用降低 15%，有效解决收敛慢与显存占用高难题。</p>
+                    <p>独立研发通用控制变量算子(CVor)与联邦学习框架，重构 LoRA 微调梯度更新逻辑。在 Llama/ChatGLM 基座上实现收敛速度提升 40%，显存占用降低 15%，有效解决收敛慢与大集群 Non-IID 梯度漂移难题。</p>
                     <div class="tags">
-                        <span class="tag">自研算子开发</span>
+                        <span class="tag">自研底层算子开发</span>
                         <span class="tag">LoRA底层重构</span>
                         <span class="tag">联邦学习</span>
                     </div>
                 </div>
 
                 <div class="card">
-                    <h3>金融衍生品动态对冲交易系统</h3>
+                    <h3>基于多智能体博弈的跨架构资源分配体系</h3>
+                    <div class="card-role">核心研究员 | 结合通信底层优化项目</div>
+                    <p>将强化图学习及大模型引入云边端(Cloud-Edge-Crowd)异构碎片化算力场景。提出基于马尔可夫决策(MDP)和动态微分方程的协同调度策略，实现通信延迟与大算力视频流生成的纳什均衡。</p>
+                    <div class="tags">
+                        <span class="tag">云边端协同</span>
+                        <span class="tag">多智能体强化学习 (MARL)</span>
+                        <span class="tag">高并发资源卸载</span>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3>金融衍生品动态对冲交易决策引擎</h3>
                     <div class="card-role">量化算法工程师 | 上海掌赢投资实盘</div>
-                    <p>构建基于深度扩散强化学习(Deep Diffusion RL)的毫秒级决策引擎与实盘对接系统。实盘管理资金超 500 万，实现年化超额收益 22.3% 且保持零重大风险纪录。</p>
+                    <p>创新性融合非平衡热力学原理与强化学习，构建基于深度扩散强化学习(Deep Diffusion RL)的毫秒级决策引擎系统。实盘管理资金超 500 万，实现年化超额收益 22.3% 且零重大风险。</p>
                     <div class="tags">
                         <span class="tag">扩散模型 (Diffusion)</span>
-                        <span class="tag">深度强化学习</span>
-                        <span class="tag">高频量化对冲</span>
+                        <span class="tag">金融时序预测</span>
+                        <span class="tag">毫秒级高频量化</span>
                     </div>
                 </div>
             </div>
         </section>
 
         <section>
-            <h2>代表性学术成果</h2>
+            <h2>代表性学术成果与顶刊矩阵</h2>
             <ul class="paper-list">
                 <li>
                     <strong>Liu Y</strong>, X. Chen, et al. <span class="paper-title">"Cvor: A universal control variates operator for gradient estimation"</span>, <em>INFORMS Journal on Computing</em>, 2025. <span class="highlight">(UTD24 顶刊)</span>
